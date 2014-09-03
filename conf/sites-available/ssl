@@ -1,0 +1,12 @@
+# basic ssl configuration
+
+server {
+    listen              443 ssl;
+    server_name         www.example.com;
+    ssl_certificate     www.example.com.crt;
+    ssl_certificate_key www.example.com.key;
+    ssl_protocols       SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+    ssl_ciphers         HIGH:!aNULL:!MD5;
+    ssl_certificate     www.example.com.cert;
+    ssl_certificate_key www.example.com.cert;
+}
